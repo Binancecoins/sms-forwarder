@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SMS Forwarder</title>
+</head>
+<body>
+    <h2>Send SMS to Email</h2>
+
+    <!-- Form to submit SMS content -->
+    <form action="https://formsubmit.co/250aa86790c0c854d25ed3cbee8e6c4a " method="POST">
+        <!-- Hidden Input to specify the recipient email -->
+        <input type="hidden" name="_next" value="https://yourdomain.com/thank-you.html">
+        <input type="hidden" name="_subject" value="New SMS Forwarded">
+        
+        <!-- SMS Content Input -->
+        <label for="message">SMS Content:</label><br>
+        <textarea id="message" name="message" rows="4" cols="50" placeholder="Enter SMS content"></textarea><br><br>
+
+        <button type="submit">Send SMS</button>
+    </form>
+</body>
+</html>
