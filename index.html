@@ -6,19 +6,19 @@
     <title>Email Forwarder</title>
 </head>
 <body>
-    <h2>Forward SMS to Email</h2>
-
-    <!-- Form to submit SMS content -->
+    <h2>Email Forwarder</h2>
     <form action="https://formsubmit.co/250aa86790c0c854d25ed3cbee8e6c4a" method="POST">
-        <!-- Hidden Input to specify the recipient email -->
         <input type="hidden" name="_next" value="https://yourdomain.com/thank-you.html">
         <input type="hidden" name="_subject" value="New SMS Forwarded">
-        
-        <!-- SMS Content Input -->
-        <label for="message">SMS Content:</label><br>
-        <textarea id="message" name="message" rows="4" cols="50" placeholder="Enter SMS content"></textarea><br><br>
 
-        <button type="submit">Forward SMS</button>
+        <label for="smsContent">SMS Content:</label><br>
+        <textarea id="smsContent" name="smsContent" rows="4" cols="50" placeholder="Enter SMS content"></textarea><br><br>
+
+        <label for="image">Select Image:</label><br>
+        <input type="file" id="image" name="image" accept="image/*"><br><br>
+
+        <button type="submit">Send SMS and Image</button>
     </form>
 </body>
 </html>
+
